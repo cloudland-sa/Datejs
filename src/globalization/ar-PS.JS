@@ -1,8 +1,8 @@
 Date.CultureInfo = {
     /* Culture Name */
-    name: "ar-KW",
-    englishName: "Arabic (Kuwait)",
-    nativeName: "العربية (الكويت)",
+    name: "ar-IQ",
+    englishName: "Arabic (Palestine)",
+    nativeName: "العربية (فلسطين)",
 
     /* Day Name Strings */
     dayNames: ["الأحد", "الإثنين", "الثلاثاء", "الأربعاء", "الخميس", "الجمعة", "السبت"],
@@ -11,8 +11,8 @@ Date.CultureInfo = {
     firstLetterDayNames: ["ح", "ن", "ث", "ر", "خ", "ج", "س"],
     
     /* Month Name Strings */
-    monthNames: ["يناير", "فبراير", "مارس", "أبريل", "مايو", "يونيو", "يوليو", "أغسطس", "سبتمبر", "أكتوبر", "نوفمبر", "ديسمبر"],
-    abbreviatedMonthNames: ["ينا", "فبر", "مار", "أبر", "ماي", "يون", "يول", "أغس", "سبت", "أكت", "نوف", "ديس"],
+    monthNames: ["كانون الثاني", "شباط", "آذار", "نيسان", "أيار", "حزيران", "تموز", "آب", "أيلول", "تشرين الأول", "تشرين الثاني", "كانون الأول"],
+    abbreviatedMonthNames: ["كانون 2", "شباط", "آذار", "نيسان", "أيار", "حزيران", "تموز", "آب", "أيلول", "تشرين 1", "تشرين 2", "كانون 1"],
 
     /* AM/PM Designators */
     amDesignator: "ص",
@@ -82,18 +82,18 @@ Date.CultureInfo = {
      * As well, please review the list of "Future Strings" section below. 
      */	
     regexPatterns: {
-        jan: /^يناير/i,
-        feb: /^فبراير/i,
-        mar: /^مارس/i,
-        apr: /^أبريل/i,
-        may: /^مايو/i,
-        jun: /^يونيو/i,
-        jul: /^يوليو/i,
-        aug: /^أغسطس/i,
-        sep: /^سبتمبر/i,
-        oct: /^أكتوبر/i,
-        nov: /^نوفمبر/i,
-        dec: /^ديسمبر/i,
+        jan: /^كانون الثاني/i,
+        feb: /^شباط/i,
+        mar: /^آذار/i,
+        apr: /^نيسان/i,
+        may: /^أيار/i,
+        jun: /^حزيران/i,
+        jul: /^تموز/i,
+        aug: /^آب/i,
+        sep: /^أيلول/i,
+        oct: /^تشرين الأول/i,
+        nov: /^تشرين الثاني/i,
+        dec: /^كانون الأول/i,
         
         sun: /^الأحد/i,
         mon: /^الإثنين/i,
@@ -124,12 +124,12 @@ Date.CultureInfo = {
 		
 	shortMeridian: /^(ص|م)/i,
 	longMeridian: /^(صباح(ا)?|مساء(ا)?)/i,
-	timezone: /^(((gmt)?\s*(\+|\-)\s*\d\d\d\d?)|gmt|utc|((ب(ال)?)?توقيت )?(مكة( المكرمة)?|(دولة )?الكويت|العرب(ي)?( القياسي)?|ast|arabia( standard)? tim(e|ing)))/i,        
+	timezone: /^(((gmt)?\s*(\+|\-)\s*\d\d\d\d?)|gmt|utc|((ب(ال)?)?توقيت )?((دولة )?فلسطين|القدس(المحتلة)?|العرب(ي)?( الصيفي)?( القياسي)?|ast|adt|arabia( daylight)?( standard)? tim(e|ing)))/i,
         ordinalSuffix: /^\s*(st|nd|rd|th)/i,
         timeContext: /^\s*(\:|a(?!u|p)|p)/i
     },
 
-	timezones: [{name:"UTC", offset:"-000"}, {name:"GMT", offset:"-000"}, {name:"AST", offset:"+0300"}]
+	timezones: [{name:"UTC", offset:"-000"}, {name:"GMT", offset:"-000"}, {name:"AST", offset:"+0300"}, {name:"ADT", offset:"+0200"}]
 };
 
 /********************

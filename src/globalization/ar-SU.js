@@ -1,9 +1,9 @@
 Date.CultureInfo = {
-    /* Culture Name */
-    name: "ar-KW",
-    englishName: "Arabic (Kuwait)",
-    nativeName: "العربية (الكويت)",
-
+	/* Culture Name */
+    name: "ar-SU",
+    englishName: "Arabic (Egypt)",
+    nativeName: "العربية (السودان)",
+        
     /* Day Name Strings */
     dayNames: ["الأحد", "الإثنين", "الثلاثاء", "الأربعاء", "الخميس", "الجمعة", "السبت"],
     abbreviatedDayNames: ["أحد", "إثنين", "ثلاثاء", "أربعاء", "خميس", "جمعة", "سبت"],
@@ -11,10 +11,10 @@ Date.CultureInfo = {
     firstLetterDayNames: ["ح", "ن", "ث", "ر", "خ", "ج", "س"],
     
     /* Month Name Strings */
-    monthNames: ["يناير", "فبراير", "مارس", "أبريل", "مايو", "يونيو", "يوليو", "أغسطس", "سبتمبر", "أكتوبر", "نوفمبر", "ديسمبر"],
-    abbreviatedMonthNames: ["ينا", "فبر", "مار", "أبر", "ماي", "يون", "يول", "أغس", "سبت", "أكت", "نوف", "ديس"],
+    monthNames: ["يناير", "فبراير", "مارس", "أبريل", "ماي", "يونيو", "يوليو", "أغسطس", "سبتمبر", "أكتوبر", "نوفمبر", "دجنبر"],
+    iatedMonthNames: ["ينا", "فبر", "مار", "أبر", "ماي", "يون", "يول", "أغس", "سبت", "أكت", "نوف", "دجم"],
 
-    /* AM/PM Designators */
+	/* AM/PM Designators */
     amDesignator: "ص",
     pmDesignator: "م",
 
@@ -124,12 +124,13 @@ Date.CultureInfo = {
 		
 	shortMeridian: /^(ص|م)/i,
 	longMeridian: /^(صباح(ا)?|مساء(ا)?)/i,
-	timezone: /^(((gmt)?\s*(\+|\-)\s*\d\d\d\d?)|gmt|utc|((ب(ال)?)?توقيت )?(مكة( المكرمة)?|(دولة )?الكويت|العرب(ي)?( القياسي)?|ast|arabia( standard)? tim(e|ing)))/i,        
-        ordinalSuffix: /^\s*(st|nd|rd|th)/i,
-        timeContext: /^\s*(\:|a(?!u|p)|p)/i
+  timezone: /^(((gmt)?\s*(\+|\-)\s*\d\d\d\d?)|gmt|utc|((ب(ال)?)?توقيت )?((جمهورية )?السودان|الخرطوم|شرق افريقيا|eat|eastern africa? tim(e|ing)))/i,
+        
+  ordinalSuffix: /^\s*(st|nd|rd|th)/i,
+  timeContext: /^\s*(\:|a(?!u|p)|p)/i
     },
 
-	timezones: [{name:"UTC", offset:"-000"}, {name:"GMT", offset:"-000"}, {name:"AST", offset:"+0300"}]
+	timezones: [{name:"UTC", offset:"-000"}, {name:"GMT", offset:"-000"}, {name:"EET", offset:"+0200"}, {name:"EEST", offset:"+0300"}, {name:"AST", offset:"+0300"}, {name:"ADT", offset:"+0200"}]
 };
 
 /********************

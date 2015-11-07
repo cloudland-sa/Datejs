@@ -1,9 +1,9 @@
 Date.CultureInfo = {
-    /* Culture Name */
-    name: "ar-KW",
-    englishName: "Arabic (Kuwait)",
-    nativeName: "العربية (الكويت)",
-
+	/* Culture Name */
+    name: "ar-MR",
+    englishName: "Arabic (Mauritania)",
+    nativeName: "العربية (موريتانيا)",
+    
     /* Day Name Strings */
     dayNames: ["الأحد", "الإثنين", "الثلاثاء", "الأربعاء", "الخميس", "الجمعة", "السبت"],
     abbreviatedDayNames: ["أحد", "إثنين", "ثلاثاء", "أربعاء", "خميس", "جمعة", "سبت"],
@@ -11,9 +11,8 @@ Date.CultureInfo = {
     firstLetterDayNames: ["ح", "ن", "ث", "ر", "خ", "ج", "س"],
     
     /* Month Name Strings */
-    monthNames: ["يناير", "فبراير", "مارس", "أبريل", "مايو", "يونيو", "يوليو", "أغسطس", "سبتمبر", "أكتوبر", "نوفمبر", "ديسمبر"],
-    abbreviatedMonthNames: ["ينا", "فبر", "مار", "أبر", "ماي", "يون", "يول", "أغس", "سبت", "أكت", "نوف", "ديس"],
-
+    monthNames: ["يناير", "فبراير", "مارس", "أبريل", "مايو", "يونيو", "يوليو", "أغشت", "شتمبر", "أكتوبر", "نوفمبر", "ديسمبر"],
+    abbreviatedMonthNames:  : ["ينا", "فبر", "مار", "أبر", "ماي", "يون", "يول", "أغش", "شتم", "أكت", "نوف", "ديس"],
     /* AM/PM Designators */
     amDesignator: "ص",
     pmDesignator: "م",
@@ -89,8 +88,8 @@ Date.CultureInfo = {
         may: /^مايو/i,
         jun: /^يونيو/i,
         jul: /^يوليو/i,
-        aug: /^أغسطس/i,
-        sep: /^سبتمبر/i,
+        aug: /^أغشت/i,
+        sep: /^شتمبر/i,
         oct: /^أكتوبر/i,
         nov: /^نوفمبر/i,
         dec: /^ديسمبر/i,
@@ -124,14 +123,13 @@ Date.CultureInfo = {
 		
 	shortMeridian: /^(ص|م)/i,
 	longMeridian: /^(صباح(ا)?|مساء(ا)?)/i,
-	timezone: /^(((gmt)?\s*(\+|\-)\s*\d\d\d\d?)|gmt|utc|((ب(ال)?)?توقيت )?(مكة( المكرمة)?|(دولة )?الكويت|العرب(ي)?( القياسي)?|ast|arabia( standard)? tim(e|ing)))/i,        
-        ordinalSuffix: /^\s*(st|nd|rd|th)/i,
-        timeContext: /^\s*(\:|a(?!u|p)|p)/i
+  timezone: /^(((gmt)?\s*(\+|\-)\s*\d\d\d\d?)|gmt|utc|((ب(ال)?)?توقيت )?((جمهورية )?موريتانيا|نواكشوط|جرينتش|غرب أوروبا|wet|west|western europe tim(e|ing))/i,
+
+  ordinalSuffix: /^\s*(st|nd|rd|th)/i,
+  timeContext: /^\s*(\:|a(?!u|p)|p)/i
     },
-
-	timezones: [{name:"UTC", offset:"-000"}, {name:"GMT", offset:"-000"}, {name:"AST", offset:"+0300"}]
+	timezones: [{name:"UTC", offset:"-000"}, {name:"GMT", offset:"-000"}, {name:"WET", offset:"+000"}]
 };
-
 /********************
  ** Future Strings **
  ********************
